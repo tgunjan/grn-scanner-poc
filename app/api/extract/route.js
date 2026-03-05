@@ -17,6 +17,9 @@ FIELDS TO EXTRACT:
 
 From the SUPPLIER'S CHALLAN:
 1. dc_number — Delivery Challan number / Bill number / Ch. No. (look for DC No, Challan No, Ch. No., Bill No, No.)
+IMPORTANT: Many challan forms have BOTH an "Order No." and a "Challan No." — these are DIFFERENT fields. 
+Always pick the CHALLAN No., never the Order No. The Challan No. is typically a longer number (4-8 digits) while Order No. is shorter. 
+If both are present, the Challan No. is the one labeled "Challan No." or "Ch. No." or "DC No."
 2. dc_date — Date on the challan (convert to DD-MM-YYYY format regardless of how written)
 3. supplier_name — Supplier / Consignor / Seller / company name from the letterhead or header
 4. material_description — What material is being delivered. Be specific with grades and types:
