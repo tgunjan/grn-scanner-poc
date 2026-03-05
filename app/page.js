@@ -196,7 +196,7 @@ const compressImage = (dataUrl, maxWidth = 1600, quality = 0.7) => {
       canvas.width = w;
       canvas.height = h;
       canvas.getContext("2d").drawImage(img, 0, 0, w, h);
-      const compressed = canvas.toDataURL("image/jpeg", 0.4);
+      const compressed = canvas.toDataURL("image/jpeg", 0.7);
       const base64 = compressed.split(",")[1];
       const compressedKB = Math.round(base64.length * 0.75 / 1024);
 
